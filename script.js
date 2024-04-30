@@ -23,9 +23,9 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-  let n = parseInt(
-    prompt("Enter 0,1,2 for rock, paper, scissors respectively")
-  );
+  let n =
+    parseInt();
+    //    prompt("Enter 0,1,2 for rock, paper, scissors respectively")
   let str;
   switch (n) {
     case 0:
@@ -76,11 +76,9 @@ function playRound(humanChoice, computerChoice) {
 function playGame() {
   let humanChoice;
   let computerChoice;
-  for (let i = 0; i < 5; i++) {
-    humanChoice = getHumanChoice();
-    computerChoice = getComputerChoice();
-    playRound(humanChoice, computerChoice);
-  }
+  humanChoice = getHumanChoice();
+  computerChoice = getComputerChoice();
+  playRound(humanChoice, computerChoice);
   console.log("Final Scores:");
   console.log("You: " + humanScore + " Computer: " + computerScore);
   if (humanScore > computerScore) {

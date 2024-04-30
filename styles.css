@@ -1,4 +1,29 @@
 body{
     margin: 0;
-    background-color: sky-blue;
+    text-align: center;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.btn{
+    width: 100px;
+    height: 20px;
+    background: skyblue;
+    border: solid 2px skyblue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: rgb(200, 237, 251);
+    border-color: rgb(200, 237, 251);
+}
+
+.finals{
+    background-color: skyblue;
+    border-radius: 7px;
+    border: solid 2px black;
+    color: black;
 }
